@@ -33,13 +33,16 @@ if (!isProduction) {
 if(isProduction){
   mongoose.connect(process.env.MONGODB_URI);
 } else {
-  mongoose.connect('mongodb://localhost/conduit');
+  mongoose.connect('mongodb+srv://sammylina:B0ns01r@mcluster.hrewcxx.mongodb.net/?retryWrites=true&w=majority', 
+	  {
+		dbName: 'startup_dev'
+	  });
   mongoose.set('debug', true);
 }
 
 require('./models/User');
-require('./models/Article');
-require('./models/Comment');
+//require('./models/Article');
+//require('./models/Comment');
 require('./config/passport');
 
 app.use(require('./routes'));
