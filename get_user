@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 token=`echo  "$(<./token)"`
-curl localhost:5000/api/user \
+curl https://language.onrender.com/api/user \
 -H "Authorization: Token $token"

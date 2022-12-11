@@ -18,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.1",
+    "cookie-session": "^2.0.0",
     "cors": "2.7.1",
     "ejs": "^3.1.8",
     "errorhandler": "1.4.3",
@@ -42,5 +43,7 @@
     "newman": "^5.3.2",
     "nodemon": "^2.0.20"
   },
-  "engines": {"node": "14.x"}
+  "engines": {
+    "node": "14.x"
+  }
 }
