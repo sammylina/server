@@ -31,9 +31,9 @@ if (!isProduction) {
 }
 
 if(isProduction){
-  mongoose.connect(process.env.MONGODB_URI);
+  mongoose.connect(process.env.MONGODB_URI, {dbName: "startup_pro"});
 } else {
-  mongoose.connect('mongodb+srv://sammylina:B0ns01r@mcluster.hrewcxx.mongodb.net/?retryWrites=true&w=majority', 
+  mongoose.connect(process.env.MONGODB_URI, 
 	  {
 		dbName: 'startup_dev'
 	  });
