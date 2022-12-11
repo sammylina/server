@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-curl localhost:3000/api/users -s \
+curl localhost:5000/api/users -s \
 -X POST \
 -H 'Content-Type: application/json' \
 -d '{"user": {"username": "'$1'", "email": "'$2'", "password": "'$3'"}}' | jq 

@@ -36,6 +36,9 @@ node_modules
 
 .idea
 
+# Enviromental variables
+.env
+
 # Credential file
 credentials
 db
